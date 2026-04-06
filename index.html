@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — PlayCraft</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background: #ffffff;
+      padding: 24px 16px 64px;
+    }
+    .container { max-width: 800px; margin: 0 auto; }
+    h1 { font-size: 2rem; font-weight: 700; margin-bottom: 4px; }
+    .meta { color: #666; font-size: 0.9rem; margin-bottom: 40px; }
+    h2 { font-size: 1.2rem; font-weight: 600; margin: 36px 0 10px; }
+    p { margin-bottom: 12px; }
+    ul { margin: 8px 0 12px 20px; }
+    li { margin-bottom: 6px; }
+    a { color: #0070f3; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    hr { border: none; border-top: 1px solid #e5e5e5; margin: 40px 0; }
+    @media (max-width: 600px) {
+      h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy — PlayCraft</h1>
+    <p class="meta">Last updated: April 6, 2026 &nbsp;·&nbsp; Developer: SudarshanTechLabs</p>
+
+    <h2>Overview</h2>
+    <p>
+      PlayCraft is a Claude Code plugin that helps Android developers automate Google Play Store publishing tasks —
+      store listings, ASO audits, release notes, policy declarations, and screenshot copy.
+    </p>
+    <p>
+      This privacy policy explains what information PlayCraft touches and how it is handled.
+      The short version: PlayCraft does not collect, store, or transmit any personal data to any server.
+    </p>
+
+    <h2>What We Don't Collect</h2>
+    <p>PlayCraft does not collect:</p>
+    <ul>
+      <li>Names, email addresses, or contact information</li>
+      <li>App usage data or analytics</li>
+      <li>Device identifiers or crash reports</li>
+      <li>Google Play Console credentials or API keys</li>
+      <li>Any data from your app's users</li>
+    </ul>
+
+    <h2>How the Plugin Config Works</h2>
+    <p>
+      When you run <code>/playcraft:setup</code>, the plugin saves your developer details
+      (name, company, email, GitHub username, country, and locale preferences) to a file called
+      <code>.claude-plugin-config.json</code> in your project directory on your local machine.
+    </p>
+    <p>
+      This file is stored only on your device. It is never uploaded to any server by PlayCraft.
+      The setup command automatically adds this file to your project's <code>.gitignore</code>
+      so it is not accidentally committed to version control.
+    </p>
+
+    <h2>Permissions and Access</h2>
+    <p>PlayCraft is a text-based plugin. It:</p>
+    <ul>
+      <li>Reads and writes local files on your machine (to create config and policy output files)</li>
+      <li>Does not access the internet independently</li>
+      <li>Does not connect to any PlayCraft servers — there are no PlayCraft servers</li>
+      <li>Does not access Google Play Console on your behalf</li>
+    </ul>
+    <p>
+      All output (store listings, release notes, audit reports, declaration checklists) is generated
+      locally by Claude and displayed in your Claude Code session or saved to files you specify.
+    </p>
+
+    <h2>Third-Party Services</h2>
+    <p>
+      PlayCraft runs inside Claude Code, developed by Anthropic. When you use PlayCraft, your inputs
+      and outputs are processed by Claude (Anthropic's AI model) according to
+      <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">Anthropic's Privacy Policy</a>.
+    </p>
+    <p>
+      PlayCraft itself does not integrate with, send data to, or receive data from any third-party service.
+    </p>
+
+    <h2>Data Storage</h2>
+    <p>
+      No data is stored by PlayCraft on any remote server. The only storage that occurs is the
+      <code>.claude-plugin-config.json</code> file written to your local machine during setup,
+      and any output files you choose to save locally. You can delete these at any time.
+    </p>
+
+    <h2>Children's Privacy</h2>
+    <p>
+      PlayCraft is a developer tool intended for adults. It is not directed at children under 13,
+      and no information is knowingly collected from children.
+    </p>
+
+    <h2>Changes to This Policy</h2>
+    <p>
+      If this privacy policy changes, the updated version will be posted at this URL with a new
+      "Last updated" date. Changes take effect when posted.
+    </p>
+
+    <hr />
+
+    <h2>Contact</h2>
+    <p>
+      Questions about this privacy policy? Email:
+      <a href="mailto:sunny.sudarshan@gmail.com">sunny.sudarshan@gmail.com</a>
+    </p>
+    <p>
+      Plugin source code:
+      <a href="https://github.com/SUDARSHANCHAUDHARI/PlayCraft" target="_blank" rel="noopener">
+        github.com/SUDARSHANCHAUDHARI/PlayCraft
+      </a>
+    </p>
+  </div>
+</body>
+</html>
