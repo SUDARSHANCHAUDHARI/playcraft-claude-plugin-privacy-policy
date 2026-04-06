@@ -22,7 +22,7 @@ This repository hosts the official privacy policy for the **PlayCraft** Claude C
 
 | Command | Description |
 |---|---|
-| `/playcraft:setup` | One-time setup — saves your developer details to `.claude-plugin-config.json` |
+| `/playcraft:setup` | Show your current developer config and how to update it |
 | `/playcraft:store-listing` | Generate title, short description, and full description |
 | `/playcraft:release-notes` | Write what's new copy for an app update |
 | `/playcraft:aso-audit` | Score and fix your ASO with keyword recommendations |
@@ -34,10 +34,10 @@ This repository hosts the official privacy policy for the **PlayCraft** Claude C
 ## Install
 
 ```bash
-/plugin marketplace add https://github.com/SUDARSHANCHAUDHARI/PlayCraft
+/plugin install playcraft
 ```
 
-Run `/playcraft:setup` once per project to save your developer details. All other commands read from that config automatically — no repeated questions.
+When you enable the plugin, Claude Code prompts you for your developer details once (name, company, email, GitHub username, country, default locale). These are stored globally in your Claude Code settings and used automatically in every project.
 
 ---
 
@@ -50,7 +50,7 @@ Full source code, documentation, and issue tracker:
 
 ## Privacy Policy for This Plugin
 
-PlayCraft does **not** collect, transmit, or store any user data. All listing generation and auditing happens locally in your Claude Code session. Your developer details are stored only in a local `.claude-plugin-config.json` file in your project directory.
+PlayCraft does **not** collect, transmit, or store any user data. All listing generation and auditing happens locally in your Claude Code session. Your developer details are stored globally in your local Claude Code settings — never on any server.
 
 The full privacy policy for this plugin is available at:
 **https://sudarshanchaudhari.github.io/playcraft-claude-plugin-privacy-policy/**
